@@ -1,0 +1,14 @@
+<BrowserRouter>
+
+<Routes>
+      <Route path='/' element={<Template />}>
+        <Route path='users' element={<User />}/>
+        <Route path='movies' element={<Movies />} />
+        <Route path='tabs' element={<TabsComp heading="Priklad Tabs" />} />
+        <Route path='snackbar' element={<Snackbar />} />
+        <Route path='date' element={<DateComp />} />
+
+      </Route>
+</Routes>
+
+  </BrowserRouter>

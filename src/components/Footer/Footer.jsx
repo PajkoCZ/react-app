@@ -1,8 +1,11 @@
+import "./footer.css"
+
 const Footer = () => {
-    return(
-        <div>
-            <h1>Toto je footer</h1>
-        </div>
+    return (
+        <footer>
+            <p>&copy; 2023 Pavel Mančík - Ostravská univerzita</p>
+            
+        </footer>
     )
 }
 
