@@ -9,13 +9,17 @@ import Template from './components/Template/Template';
 import TabsComp from './components/Tabs/TabsComp';
 import Snackbar from './components/Snackbar/Snackbar';
 import DateComp from './components/Date/DateComp';
+import Book from './pages/Books/Books';
+
+
 
 
 
 // *** Authentication ***
-import { AuthContext } from "./Context/AuthContext";
+import { AuthContext } from "./context/AuthContext";
 import { useContext } from "react";
 import Login from './pages/Login/Login';
+import Users from './components/TableComp/Users';
 
 
 
@@ -39,7 +43,8 @@ function App() {
             <Route path='tabs' element={<RequireAuth><TabsComp /></RequireAuth>} />
             <Route path='snackbar' element={<RequireAuth><Snackbar /></RequireAuth>} />
             <Route path='date' element={<RequireAuth><DateComp /></RequireAuth>} />
-            
+            <Route path='book' element={<RequireAuth><Book /></RequireAuth>} />
+            <Route path='users' element={<RequireAuth><Users /></RequireAuth>} />
             
            
           </Route>

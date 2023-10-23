@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 
-import { AuthContextProvider } from "../src/Context/AuthContext";
+import { AuthContextProvider } from "../src/context/AuthContext";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
