@@ -1,16 +1,15 @@
 import NavbarComp from "../../components/Navbar/NavbarComp";
 import Footer from "../../components/Footer/Footer";
+import SnackbarComp from "../../components/Snackbar/SnackbarComp";
 
-const Home = () => {
-    return (
+const Snackbar = (title) => {
+    return(
         <div className="content">
             <NavbarComp />
-            <div className="subcontent">
-                <h1>React aplikace do předmětu 7VFAP</h1>
-            </div>
+            <SnackbarComp title={title}/>
             <Footer />
         </div>
     )
 }
 
-export default Home;
+export default Snackbar;

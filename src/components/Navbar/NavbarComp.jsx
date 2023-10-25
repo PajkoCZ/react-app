@@ -9,18 +9,15 @@ const NavbarComp = () => {
         <div>
             <Navbar collapseOnSelect expand="lg" className="navbar-dark bg-dark">
                 <Container>
-                    <Navbar.Brand href="#home" className="text-info">Pavel Mancik - OSU</Navbar.Brand>
+                    <Navbar.Brand href="/" className="text-info">Pavel Mancik - OSU</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link href="/tabs">Tabs</Nav.Link>
                             <Nav.Link href="snackbar">Snackbar</Nav.Link>
-                        </Nav>
-                        <Nav>
-                            <Nav.Link href="#deets">More deets</Nav.Link>
-                            <Nav.Link eventKey={2} href="#memes">
-                                Dank memes
-                            </Nav.Link>
+                            <Nav.Link href="date">DatePicker</Nav.Link>
+                            <Nav.Link href="book">Knihy (firebase databáze)</Nav.Link>
+                            <Nav.Link href="users">Uživatelé</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

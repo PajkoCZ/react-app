@@ -1,16 +1,16 @@
 import NavbarComp from "../../components/Navbar/NavbarComp";
 import Footer from "../../components/Footer/Footer";
+import TabsComp from "../../components/Tabs/TabsComp";
 
-const Home = () => {
-    return (
+const Tabs = ({title}) => {
+    return(
         <div className="content">
             <NavbarComp />
-            <div className="subcontent">
-                <h1>React aplikace do předmětu 7VFAP</h1>
-            </div>
+            <TabsComp heading={title}/>
             <Footer />
+
         </div>
     )
 }
 
-export default Home;
+export default Tabs;

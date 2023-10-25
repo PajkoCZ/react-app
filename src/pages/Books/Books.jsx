@@ -18,10 +18,11 @@ const Book = () => {
     };
 
     return (
-        <>
+        <div className="content">
             <NavbarComp />
+            <h1>Knihy</h1>
 
-            <Container style={{ width: "400px" }}>
+            <Container style={{ width: "400px" }} className="subcontent">
                 <Row>
                     <Col>
                         <AddBook id={bookId} setBookId={setBookId} />
@@ -39,7 +40,7 @@ const Book = () => {
 
 
             <Footer />
-        </>
+        </div>
     )
 }
 

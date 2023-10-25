@@ -2,16 +2,17 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Toast from 'react-bootstrap/Toast';
 
-const Snackbar = () => {
+const SnackbarComp = (title) => {
     document.title = "Snackbar";
 
     const [showA, setShowA] = useState(false); 
     const toggleShowA = () => setShowA(!showA);
 
     return (
-        <div className='d-flex justify-content-center'>
+        <div className='d-flex flex-column align-items-center subcontent'>
+            <h1>Snackbar</h1>
             <Button onClick={toggleShowA} className="mb-2">
-                Toggle Toast <strong>with</strong> Animation
+                Použít Snackbar <strong>kliknutím</strong>
             </Button>
             <Toast show={showA} onClose={toggleShowA} className='position-absolute bottom-0 end-0'>
                 <Toast.Header className='bg-info'>
@@ -29,4 +30,4 @@ const Snackbar = () => {
     )
 }
 
-export default Snackbar;
+export default SnackbarComp;

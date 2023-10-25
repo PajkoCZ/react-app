@@ -10,7 +10,7 @@ const DateComp = () => {
     };
 
     return (
-        <div>
+        <div className='subcontent d-flex align-items-center flex-column'>
             <h1>Vyberte datum:</h1>
             <DatePicker
                 selected={selectedDate}
